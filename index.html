@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunte à foca</title>
+</head>
+<body>
+    <h1>Pergunte à foca</h1>
+    <img height=500px src="focacjr.png.png" alt="Foca">
+    <div>
+	<input type="text" class="caso1"> ou <input type="text" class="caso2">
+    </div>
+    <button type="button" onclick="escolhendo()"> Perguntar </button>
+</body>
+</html>
+<style>
+        button {
+	        background-color: rgb(255, 184, 208);
+}       body {
+	        background-color: #7ecfd3;
+	        text-align: center;
+}
+</style>
+<script>
+	function escolhendo(){
+        var escolha = Math.floor(Math.random() * 10);
+        if (escolha%2)
+	        alert("A foca escolheu "+document.querySelector(".caso1").value)
+        else
+	        alert("A foca escolheu "+document.querySelector(".caso2").value)
+}
+</script>
